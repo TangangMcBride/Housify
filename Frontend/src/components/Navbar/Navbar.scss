@@ -7,6 +7,7 @@ nav {
   align-items: center;
   padding-top: 10px;
 
+
   a {
     transition: all 0.4s ease;
 
@@ -24,6 +25,11 @@ nav {
     align-items: center;
     display: flex;
     gap: 50px;
+   .agent{
+    @include responsive.lg{
+    padding-right: 46px;
+    }
+  }
     .logo {
       font-weight: bold;
       font-size: 20px;
@@ -49,7 +55,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    background-color: #ffbd59;
+    background-color: #ffbd59c3;
     height: 100%;
     border-radius: 10px 10px 0px 0px;
 
@@ -60,10 +66,21 @@ nav {
     a {
       padding: 12px 24px;
       margin: 20px;
+      @include responsive.md{
+        padding: 8px;
+      }
+    }
+    .auth{
+      background-color: black;
+      border-radius: 5px;
+      color: white;
     }
     .register {
       background-color: #ffff;
       border-radius: 5px;
+      @include responsive.md{
+        background-color:#ffbd59c3 ;
+      }
     }
     .menuIcon {
       display: none;
@@ -91,6 +108,9 @@ nav {
       align-items: center;
       justify-content: center;
       font-size: 23px;
+      @include responsive.md{
+        right: -70%;
+      }
 
       &.active {
         right: 0;

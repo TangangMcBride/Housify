@@ -24,10 +24,10 @@ const Navbar = () => {
         <a href="/">Home</a>
         <a href="/">About</a>
         <a href="/">Content</a>
-        <a href="/">Agent</a>
+        <a href="/" className="agent">Agent</a>
       </div>
       <div className="login">
-        <a href="/">Sign in</a>
+        <a href="/" className="auth">Sign in</a>
         <a href="/" className="register">
           Sign Up
         </a>
