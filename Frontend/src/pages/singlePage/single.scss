@@ -1,0 +1,80 @@
+.singlePage {
+  display: flex;
+  height: 100%;
+  .details {
+    flex: 3;
+    .wrapper {
+      padding-right: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        .top {
+          display: flex;
+          justify-content: space-between;
+          .postInfo {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            h1 {
+              font-weight: 400;
+            }
+            .address {
+              display: flex;
+              gap: 5px;
+              align-items: center;
+              color: #888;
+              font-size: 24px;
+              img {
+                width: 16px;
+                height: 16px;
+              }
+            }
+            .price {
+                padding: 5px;
+                background-color:#ffbd59c3 ;
+                border-radius: 5px;
+                width: max-content;
+                font-size:20px ;
+                font-weight: 300;
+            }
+          }
+          .userInfo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap:20px;
+            padding: 0px 30px;
+            border-radius: 10px;
+            background-color: #ffbd59c3;
+            font-weight: 600;
+            img {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+            span {
+            }
+          }
+        }
+        .bottom {
+            line-height: 20px;
+        }
+      }
+    }
+  }
+  .features {
+    flex: 2;
+    background-color: #ffbd59c3;
+    height: 100%;
+    .wrapper {
+      padding: 0px 20px;
+    }
+  }
+}
