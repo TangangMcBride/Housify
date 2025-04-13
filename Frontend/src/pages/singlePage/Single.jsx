@@ -30,23 +30,82 @@ const Single = () => {
       </div>
       <div className="features">
         <div className="wrapper">
-          <p> General</p>
-          <div className="verticalList"> 
-
+          <p className="title"> General</p>
+          <div className="verticalList">
+            <div className="feature">
+              <img src="/images/utility.png" alt="" />
+              <div className="featureText">
+                <span>Utililies</span>
+                <p>Landlord is Responsible</p>
+              </div>
+            </div>
+            <div className="feature">
+              <img src="/images/pet.png" alt="" />
+              <div className="featureText">
+                <span>Pet Policy</span>
+                <p>Pet Allowed</p>
+              </div>
+            </div>
+            <div className="feature">
+              <img src="/images/utility.png" alt="" />
+              <div className="featureText">
+                <span>Rent Amount</span>
+                <p>Minimum 6 months</p>
+              </div>
+            </div>
           </div>
-          <p> Room Sizes</p>
+          <p className="title"> Room Sizes</p>
           <div className="sizes">
-
+            <div className="size">
+              <img src="/images/size.png" alt="" />
+              <span>80sqft</span>
+            </div>
+            <div className="size">
+              <img src="/images/bed.png" alt="" />
+              <span>2 Beds</span>
+            </div>
+            <div className="size">
+              <img src="/images/bath.png" alt="" />
+              <span>bathroom</span>
+            </div>
           </div>
-          <p>Nearby Places</p>
+          <p className="title">Nearby Places</p>
           <div className="horizontalList">
-
+          <div className="feature">
+              <img src="/images/school.png" alt="" />
+              <div className="featureText">
+                <span>school</span>
+                <p>250m away</p>
+              </div>
+            </div>
+            <div className="feature">
+              <img src="/images/bus.png" alt="" />
+              <div className="featureText">
+                <span>Road</span>
+                <p>100 from Road</p>
+              </div>
+            </div>
+            <div className="feature">
+              <img src="/images/utility.png" alt="" />
+              <div className="featureText">
+                <span>Restaurant</span>
+                <p>250m away</p>
+              </div>
+            </div>
           </div>
-          <p>
-            Location
-          </p>
+          <p className="title">Location</p>
           <div className="mapContainer">
-            <Map items={[singlePostData]}/>
+            <Map items={[singlePostData]} />
+          </div>
+          <div className="buttons">
+            <button>
+              <img src="/images/chat.png" />
+              Send a Message
+            </button>
+            <button>
+              <img src="/images/save.png" />
+              Save the Place
+            </button>
           </div>
         </div>
       </div>
