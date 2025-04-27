@@ -7,9 +7,7 @@ const Home = () => {
     <div className="homePage">
       <div className="textContainer">
         <div className="wrapper">
-          <h1 className="title">
-            Find Your Dream Home for Rent or on Sale 
-          </h1>
+          <h1 className="title">Find Your Dream Home for Rent or on Sale</h1>
           <p>
             Discover the perfect home that fits your lifestyle and budget.
             Browse through a wide range of listings, get expert insights, and
@@ -19,9 +17,7 @@ const Home = () => {
           <SearchBar />
           <div className="boxes">
             <div className="box">
-            <Link to='/list'>
               <h1>5+</h1>
-              </Link>
               <h2>Years of Existence</h2>
             </div>
             <div className="box">

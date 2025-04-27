@@ -1,8 +1,11 @@
 import { useState, useEffect } from "react";
 import "./Navbar.scss";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+
+  const user = true;
 
   useEffect(() => {
     const handleResize = () => {
@@ -24,13 +27,30 @@ const Navbar = () => {
         <a href="/">Home</a>
         <a href="/">About</a>
         <a href="/">Content</a>
-        <a href="/" className="agent">Agent</a>
+        <a href="/" className="agent">
+          Agent
+        </a>
       </div>
       <div className="login">
-        <a href="/" className="auth">Sign in</a>
-        <a href="/" className="register">
-          Sign Up
-        </a>
+        {user ? (
+          <div className="user">
+            <img src="https://cultivatedculture.com/wp-content/uploads/2019/12/LinkedIn-Profile-Picture-Example-Rachel-Montan%CC%83ez.jpeg" />
+            <span>Mc Bride</span>
+            <Link to="/login" className="profile">
+              <div className="notification">4</div>
+              <span>Profile</span>
+            </Link>
+          </div>
+        ) : (
+          <>
+            <a href="/" className="auth">
+              Sign in
+            </a>
+            <a href="/" className="register">
+              Sign Up
+            </a>
+          </>
+        )}
         <div className="menuIcon">
           <img
             src="public/images/menu.svg"
@@ -38,7 +58,7 @@ const Navbar = () => {
           />
         </div>
         <div className={toggle ? " active mobileMenu" : "mobileMenu"}>
-          <a href="/" >
+          <a href="/">
             <img src="public/images/home.png" alt="Home" />
             Home
           </a>

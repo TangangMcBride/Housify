@@ -1,7 +1,11 @@
+@use "../../scss/responsive.scss" as responsive;
+
+
 .slider {
   width: 100%;
   display: flex;
   gap: 20px;
+  
   .fullSlider {
     position: absolute;
     width: 100vw;
@@ -12,6 +16,7 @@
     left: 0;
     // justify-content: space-evenly;
     align-items: center;
+    z-index: 9999;
 
     .arrow {
       flex: 1;
@@ -20,6 +25,13 @@
       justify-content: center;
       img {
         width: 50px;
+
+        @include responsive.md{
+          width: 30px;
+        }
+        @include responsive.sm{
+          width: 20px;
+        }
         &.right {
           transform: rotate(180deg);
         }
