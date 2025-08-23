@@ -34,7 +34,7 @@ Property owners can create accounts and list properties, while users can search 
 ## 📸 Preview  
 
 ### 🔹 Homepage  
-![Homepage Screenshot](./Screenshots/Screenshot 2025-08-23 153400.png)  
+![Homepage Screenshot](https://github.com/TangangMcBride/Housify/blob/main/Screenshots/Screenshot%202025-08-23%20153400.png)
 
 ### 🔹 Property Listings  
 ![Property Listings Screenshot](./Screenshots/Screenshot 2025-08-23 153500.png)  
